@@ -335,3 +335,160 @@ footer {
   background-color: #1a1a1a;
   margin-top: 40px;
 }
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 40px 15px;
+    margin: 10px auto;
+  }
+
+  header {
+    padding: 10px 20px;
+  }
+
+  .home-container {
+    flex-direction: column;
+  }
+
+  .home-image {
+    margin-bottom: 20px;
+  }
+
+  .home-text {
+    align-items: center;
+  }
+
+  .home-text h2 {
+    align-self: center;
+    font-size: 2em;
+  }
+
+  .home-text p {
+    text-align: center;
+  }
+
+  .skills-container {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .skill-item img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .project-links-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .project-link {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .navbar-left {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: space-around;
+    gap: 5px;
+    order: 3;
+  }
+
+  .nav-links a {
+    font-size: 0.9em;
+  }
+
+  .nav-links li:not(:first-child) a {
+    font-size: 0;
+  }
+
+  .nav-links li:not(:first-child) a:after {
+    content: attr(href);
+    font-size: 0.9em;
+    display: block;
+    margin-top: 5px;
+    text-transform: capitalize;
+  }
+
+  .nav-links li a i {
+    font-size: 1.3rem;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .resume-btn {
+    padding: 8px 10px;
+    font-size: 0;
+    gap: 0;
+  }
+
+  .resume-btn i {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  .home-image img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .home-text h2 {
+    font-size: 2em;
+  }
+
+  .home-text p {
+    font-size: 1em;
+  }
+
+  .section h2 {
+    font-size: 1.8em;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .contact-links a {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 15px;
+    font-size: 1em;
+  }
+
+  footer p {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 400px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-links a {
+    width: 95%;
+  }
+}
