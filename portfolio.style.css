@@ -354,9 +354,13 @@ footer {
   }
   .superContainer {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   header {
+    min-width: 300px;
     padding: 20px;
   }
 
