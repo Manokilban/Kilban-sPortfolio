@@ -342,12 +342,12 @@ footer {
 
 @media (max-width: 768px) {
   .section {
-    padding: 40px 15px;
-    margin: 10px auto;
+    margin: 20px;
+    min-width: 300px;
   }
 
   header {
-    padding: 10px 20px;
+    padding: 20px;
   }
 
   .home-container {
@@ -421,7 +421,18 @@ footer {
   footer p {
     font-size: 0.9em;
   }
+
+  .navbar {
+    flex-direction: column;
+    align-items: start;
+  }
   .nav-links {
     padding-left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-links li {
+    display: flex;
+    align-self: flex-start;
   }
 }
