@@ -5,6 +5,10 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
 }
 
 .section {
@@ -54,6 +58,7 @@ header {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .navbar-left {
@@ -92,9 +97,8 @@ header {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 10px;
 }
-
 .nav-links a {
   color: #ffffff;
   text-decoration: none;
@@ -336,16 +340,6 @@ footer {
   margin-top: 40px;
 }
 
-@media (max-width: 1024px) {
-  .navbar {
-    padding: 0 20px;
-  }
-
-  .nav-links {
-    gap: 15px;
-  }
-}
-
 @media (max-width: 768px) {
   .section {
     padding: 40px 15px;
@@ -394,62 +388,6 @@ footer {
   .project-link {
     padding: 10px;
   }
-}
-
-@media (max-width: 600px) {
-  .navbar {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .navbar-left {
-    width: 100%;
-    justify-content: center;
-    margin-bottom: 10px;
-  }
-
-  .nav-links {
-    display: none;
-    width: 100%;
-    justify-content: space-around;
-    gap: 5px;
-    order: 3;
-  }
-
-  .nav-links a {
-    font-size: 0.9em;
-    display: none;
-  }
-
-  .nav-links li:not(:first-child) a {
-    font-size: 0;
-  }
-
-  .nav-links li:not(:first-child) a:after {
-    content: attr(href);
-    font-size: 0.9em;
-    display: block;
-    margin-top: 5px;
-    text-transform: capitalize;
-  }
-
-  .nav-links li a i {
-    font-size: 1.3rem;
-    display: block;
-    margin: 0 auto;
-  }
-
-  .resume-btn {
-    /* padding: 8px 10px;
-    font-size: 0;
-    gap: 0; */
-  }
-
-  .resume-btn i {
-    /* font-size: 1.2rem;
-    margin: 0; */
-  }
 
   .home-image img {
     width: 200px;
@@ -483,14 +421,7 @@ footer {
   footer p {
     font-size: 0.9em;
   }
-}
-
-@media (max-width: 400px) {
-  .skills-container {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-links a {
-    width: 95%;
+  .nav-links {
+    padding-left: 0;
   }
 }
