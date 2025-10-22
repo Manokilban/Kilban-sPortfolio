@@ -97,9 +97,17 @@ header {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
 }
 .nav-links a {
+  border-style: solid;
+  border-bottom: transparent;
+  border-right: transparent;
+  border-top: transparent;
+  border-radius: 3px;
+  /* background-color: #222222; */
+  padding: 0 7px;
+  border-left-width: 1px;
   color: #ffffff;
   text-decoration: none;
   font-size: 1.1em;
@@ -342,8 +350,10 @@ footer {
 
 @media (max-width: 768px) {
   .section {
-    margin: 20px;
     min-width: 300px;
+  }
+  .superContainer {
+    padding: 20px;
   }
 
   header {
